@@ -28,7 +28,7 @@
 
 ```bash
 # 克隆项目
-git clone 
+git clone https://github.com/linrty/erp_web.git
 
 # 进入项目目录
 cd course_project
