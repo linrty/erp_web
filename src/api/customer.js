@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 export function fetchList(query) {
   return request({
-    url: '/vue-element-admin/customer/list',
+    url: '/admin/customer/list',
     method: 'get',
     params: query
   })
@@ -10,7 +10,7 @@ export function fetchList(query) {
 
 export function fetchCustomer(id) {
   return request({
-    url: '/vue-element-admin/customer/detail',
+    url: '/admin/customer/detail',
     method: 'get',
     params: { id }
   })
@@ -19,7 +19,7 @@ export function fetchCustomer(id) {
 
 export function createCustomer(data) {
   return request({
-    url: '/vue-element-admin/customer/create',
+    url: '/admin/customer/create',
     method: 'post',
     data
   })
@@ -27,7 +27,7 @@ export function createCustomer(data) {
 
 export function updateCustomer(data) {
   return request({
-    url: '/vue-element-admin/customer/update',
+    url: '/admin/customer/update',
     method: 'post',
     data
   })
@@ -35,7 +35,7 @@ export function updateCustomer(data) {
 
 export function deleteCustomer(query) {
   return request({
-    url: '/vue-element-admin/customer/delete',
+    url: '/admin/customer/delete',
     method: 'get',
     params: query
   })

@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 export function fetchList(query) {
   return request({
-    url: '/vue-element-admin/material/list',
+    url: '/admin/material/list',
     method: 'get',
     params: query
   })
@@ -10,7 +10,7 @@ export function fetchList(query) {
 
 export function fetchMaterial(id) {
   return request({
-    url: '/vue-element-admin/material/detail',
+    url: '/admin/material/detail',
     method: 'get',
     params: { id }
   })
@@ -19,7 +19,7 @@ export function fetchMaterial(id) {
 
 export function createMaterial(data) {
   return request({
-    url: '/vue-element-admin/material/create',
+    url: '/admin/material/create',
     method: 'post',
     data
   })
@@ -27,7 +27,7 @@ export function createMaterial(data) {
 
 export function updateMaterial(data) {
   return request({
-    url: '/vue-element-admin/material/update',
+    url: '/admin/material/update',
     method: 'post',
     data
   })
@@ -35,7 +35,7 @@ export function updateMaterial(data) {
 
 export function deleteMaterial(query) {
   return request({
-    url: '/vue-element-admin/material/update',
+    url: '/admin/material/update',
     method: 'post',
     params: query
   })

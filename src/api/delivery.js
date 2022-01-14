@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 export function fetchList(query) {
   return request({
-    url: '/vue-element-admin/delivery/list',
+    url: '/admin/delivery/list',
     method: 'get',
     params: query
   })
@@ -10,7 +10,7 @@ export function fetchList(query) {
 
 export function fetchDelivery(id) {
   return request({
-    url: '/vue-element-admin/delivery/detail',
+    url: '/admin/delivery/detail',
     method: 'get',
     params: { id }
   })
@@ -19,7 +19,7 @@ export function fetchDelivery(id) {
 
 export function createDelivery(data) {
   return request({
-    url: '/vue-element-admin/delivery/create',
+    url: '/admin/delivery/create',
     method: 'post',
     data
   })
@@ -27,7 +27,7 @@ export function createDelivery(data) {
 
 export function updateDelivery(data) {
   return request({
-    url: '/vue-element-admin/delivery/update',
+    url: '/admin/delivery/update',
     method: 'post',
     data
   })
@@ -35,7 +35,7 @@ export function updateDelivery(data) {
 
 export function deleteDelivery(query) {
   return request({
-    url: '/vue-element-admin/delivery/delete',
+    url: '/admin/delivery/delete',
     method: 'get',
     params: query
   })

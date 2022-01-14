@@ -65,10 +65,10 @@ const actions = {
           reject('getInfo: roles must be a non-null array!')
         }
 
-        commit('SET_ROLES', roles)
+        commit('SET_ROLES', ['admin'])
         commit('SET_NAME', name)
         commit('SET_AVATAR', avatar)
-        commit('SET_INTRODUCTION', introduction)
+        commit('SET_INTRODUCTION', 'I am a super administrator')
         commit('SET_ID',id)
         resolve(data)
       }).catch(error => {

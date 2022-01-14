@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 export function fetchList(query) {
   return request({
-    url: '/vue-element-admin/sales/order-list',
+    url: '/admin/sales/order-list',
     method: 'get',
     params: query
   })
@@ -10,7 +10,7 @@ export function fetchList(query) {
 
 export function fetchReturnList(query) {
   return request({
-    url: '/vue-element-admin/order/return-list',
+    url: '/admin/order/return-list',
     method: 'get',
     params: query
   })
@@ -18,7 +18,7 @@ export function fetchReturnList(query) {
 
 export function createReturn(data) {
   return request({
-    url: '/vue-element-admin/order/return-create',
+    url: '/admin/order/return-create',
     method: 'post',
     data
   })  
@@ -26,7 +26,7 @@ export function createReturn(data) {
 
 export function updateReturn(data) {
   return request({
-    url: '/vue-element-admin/order/return-update',
+    url: '/admin/order/return-update',
     method: 'post',
     data
   })
@@ -34,7 +34,7 @@ export function updateReturn(data) {
 
 export function deleteReturn(query) {
   return request({
-    url: '/vue-element-admin/order/return-delete',
+    url: '/admin/order/return-delete',
     method: 'get',
     params: query
   })
@@ -43,7 +43,7 @@ export function deleteReturn(query) {
 
 export function fetchOrder(id) {
   return request({
-    url: '/vue-element-admin/order/detail',
+    url: '/admin/order/detail',
     method: 'get',
     params: { id }
   })
@@ -52,7 +52,7 @@ export function fetchOrder(id) {
 
 export function createOrder(data) {
   return request({
-    url: '/vue-element-admin/sales/order-create',
+    url: '/admin/sales/order-create',
     method: 'post',
     data
   })
@@ -60,7 +60,7 @@ export function createOrder(data) {
 
 export function updateOrder(data) {
   return request({
-    url: '/vue-element-admin/sales/order-update',
+    url: '/admin/sales/order-update',
     method: 'post',
     data
   })
@@ -68,7 +68,7 @@ export function updateOrder(data) {
 
 export function deleteOrder(query) {
   return request({
-    url: '/vue-element-admin/sales/order-delete',
+    url: '/admin/sales/order-delete',
     method: 'get',
     params: query
   })
